@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .btn{
+    color: blue;
+    }
+    .col-xs-6{
+        color:white;
+    }
+    .alt {
+    position:fixed;
+    left:35%;
+    top:10%;
+    width:500px;
+    height:auto;
+    border-radius:10px;
+    }
+    footer {
+        bottom: 0;
+        width: 100%;
+
+    }
+    .logos {
+        margin-left: 1000px;
+    }
+    .q {
+        border:1px solid black;
+        height: 200px;
+        width: 30%;
+        background-color: green;
+        display: inline-block;
+    }
+
+
+            
+    
+   
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+
+                <a href="index.html">Arms Conflict</a>
+            </li>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+                <a href="war.html">War</a>
+            </li>
+            <li>
+                <a href="videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="news.html">News</a>
+            </li>
+            <li>
+                <a href="contactus.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+            
+
+   
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapi
+                </h1>
+            <div id="question1" class="q">What it is to be patriotic?</div>
+            <div id="question2" class="q"></div>
+            <div id="question3" class="q"></div>
+
+
+            <div id="question4" class="q">jskksljsaksa;jasksabk</div>
+            <div id="question5" class="q"></div>
+            <div id="question6" class="q"></div>
+
+        <footer>
+        <div class="container-fluid" style="background-color:gray;" line-height="20px">
+            <div class="container-fluid">
+        <div class="row">
+        <div class="col-xs-6" id="trademark">
+            <h4>&#169 Arms Conflict</h4>
+        </div>
+        <div>
+            <div class="logos" id="social"
+
+                <a href="https://www.facebook.com"><img src="image\facebook.png" alt="facebook" style="width:43px;height:43px;"></a>
+                <a href="https://instagram.com"><img src="image\instagram.png" alt="instagram" style="width:43px;height:43px;">
+                <a href="https://www.twitter.com"><img src="image\twitter.png" alt="twitter" style="width:43px;height:43px;"></a>
+                <a href="https://www.youtube.com"><img src="image\youtube.png" alt="snapchat"style="width:43px;height:43px;"></a>
+                    
+
+
+            </div>
+        </div>        
+</footer>
+
+</body>
+
+</html>
